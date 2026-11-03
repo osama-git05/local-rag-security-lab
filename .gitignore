@@ -218,3 +218,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Python environment and caches
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Local vector database
+.chroma/
