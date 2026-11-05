@@ -1,0 +1,81 @@
+{
+  "captured_at_utc": "2026-11-03T19:06:37.304061+00:00",
+  "git_commit": "bea69ede2b70f1bf6d9b54ed6f20f6d934c14155",
+  "python_version": "3.11.9",
+  "operating_system": "Windows",
+  "os_version": "10.0.26200",
+  "machine": "AMD64",
+  "packages": {
+    "fastapi": "0.162.0",
+    "uvicorn": "0.54.0",
+    "chromadb": "1.5.9",
+    "httpx": "0.28.1",
+    "pydantic": "2.14.2",
+    "python-dotenv": "1.2.4"
+  },
+  "ollama_server_version": "0.20.5",
+  "models": {
+    "optimized-gemma:latest": {
+      "installed_name": "optimized-gemma:latest",
+      "digest": "c40843ebaf9db6190dc77cfcb5049a7508a56cd9c14eae7eff12e35129872e92",
+      "size_bytes": 3427878682,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "4.6B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    "embeddinggemma": {
+      "installed_name": "embeddinggemma:latest",
+      "digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+      "size_bytes": 621875917,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma3",
+        "families": [
+          "gemma3"
+        ],
+        "parameter_size": "307.58M",
+        "quantization_level": "BF16"
+      }
+    }
+  },
+  "mode": "retrieval_authorized_prompt_hardened",
+  "system_prompt_sha256": "a8f36736124156a8af7745e944dd589332aa90e6b0b54b4a27cc65b52115b254",
+  "dataset_version": "0.1.0",
+  "manifest_sha256": "f7db52053591186039d957283803f19bc7b962e4903901047ed8deda2c868b7c",
+  "corpus_file_sha256": {
+    "onboarding-injection.md": "a07b57d6814ec1a7a21fb1139c1ed892e6929d52eb9d1c9f3832bb4ead5c4897",
+    "leave-policy.md": "6b04f152ace2d0b07ebcf0a070c4267c4d1949ffe502c83d2dac6112a532475f",
+    "security-policy.md": "1136a689a47d9ccec2a9d71a5c689066322540e57aa51b94ecc9f15b1c153420",
+    "support-ticket.md": "40ee23d0bd567d28018f7347872bb37f545ea568457a764370c86cda401c3088",
+    "finance-admin.md": "5bd4d903479e8dc2a1de3c8152cd6a1615393daaa78b527e94bc84b7a6d573f6"
+  },
+  "python_source_sha256": {
+    "auth.py": "967c5b6d99afd57b09de7199a6a00c22d3de916f15ece538f2aab72c8d3f921b",
+    "capture_environment.py": "6bbe880a7829dab060175c42531112e6e02e9c52f0402c95535ca48ac5471277",
+    "check_api_authorization.py": "b4afd4b02224050da7e71d9ad1de737c34144201c876450ca42d5d9a9bf21ae5",
+    "check_auth.py": "cec3ae2a4aed85804f3481a189b992e9f5f4b408edd45c6f5167c3cbdc143e43",
+    "check_chroma_authorization.py": "31210daa8e876d402d933cd8850f280071eee82c6ab16f235cc6b919529299ae",
+    "check_output_validation.py": "2b2e31db9643be72e959b06466cc43f0906f023ba0c9d9a68a400667b85c7632",
+    "check_query_output.py": "deeee41fd1919409f79fb66456d2507c92e2af2cefe6bbb9d982ba7f1423ff3f",
+    "check_retrieval_authorization.py": "6103c2f6b7aaa4c38f15466644c92cd1090100c72ca3cad569455740c3341482",
+    "check_retrieval_policy.py": "6103c2f6b7aaa4c38f15466644c92cd1090100c72ca3cad569455740c3341482",
+    "ingest.py": "a0dbe2c5601b4f53c3c9ac9c390b30f0390435c985b7a509a8f5b468e4e5b271",
+    "main.py": "871cd472e7a32fd499edbb552fb3288b1e5febabe0ca36d4ab30a59b0c36615d",
+    "output_validation.py": "4f4b8f439d4cdb31501d97166c922486c64c1fc1c7e0127e74ea7a30c05339bf",
+    "prepare_lab_model.py": "22af51634db591dc5336e3d672dd87ce9c8682ca37d443d0fea5840b33a79b81",
+    "query_guard.py": "3efa578a7008305f44027ffcfcf33895c6ab8740ac5d596b390fbf2e5c7f2bcc",
+    "rag.py": "d143ee1c7bee23689e53d46409ed64b656e6151b4ddf721cc96f90394beee83e",
+    "retrieve.py": "b603995cc1b983a69ad6df1204c492ed1f7f8b62583c67f609efdebaab539011",
+    "run_extended_regression.py": "4580692bf5c302e315f842709ac3400b27e0ff3080646eea62d09534aa8f9a23",
+    "run_regression.py": "6ca1110f297823a323491964fa3e49287d4ff448f65f1d3ff821fc4faf14d69e",
+    "setup_tokens.py": "12af1a6a6bbf66759fb1ef378b3df9351ff3ef69f17878c604636084ef98f9eb"
+  }
+}

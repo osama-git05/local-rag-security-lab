@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ExampleCo's local company knowledge assistant. A synthetic company demo with verified employee and administrator access.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <title>ExampleCo · Company assistant</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/assets/assistant.css">
+  <script src="/assets/assistant.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="ExampleCo home"><span class="brand-mark">e.</span><span>ExampleCo<small>YOUR WORKPLACE, CONNECTED</small></span></a>
+    <div class="workspace-label">WORKSPACE</div>
+    <div class="nav-active"><span aria-hidden="true">✧</span> Company assistant <span class="nav-dot"></span></div>
+    <button id="new-chat" class="new-chat">＋ New conversation</button>
+    <div class="sidebar-note"><span class="note-icon" aria-hidden="true">↗</span><h2>A little less searching.<br>A little more doing.</h2><p>Your company knowledge,<br>one question away.</p></div>
+    <div class="sidebar-bottom"><span class="local-dot"></span> Runs on your machine <small>SYNTHETIC COMPANY DEMO</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong>Company assistant</strong></div><button id="account-button" class="account-button"><span class="avatar" aria-hidden="true">↗</span><span id="account-label">Connect account</span></button></header>
+    <main>
+      <div class="page-heading"><div><div class="eyebrow"><span></span> THE COMPANY KNOWLEDGE DESK</div><h1>Your workday, a little simpler.</h1><p>Find the answer. Understand the policy. Get on with your day.</p></div><span class="demo-tag">LOCAL DEMO</span></div>
+      <div class="desk">
+        <section class="chat-panel" aria-label="Company assistant conversation">
+          <div class="panel-heading"><div><span class="spark" aria-hidden="true">✧</span><strong>Ask ExampleCo</strong></div><span class="verified-label">Answers with sources</span></div>
+          <div id="conversation" class="conversation" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions text">
+            <div id="welcome" class="welcome"><div class="welcome-icon" aria-hidden="true">✧</div><h2>What can I help you find?</h2><p>Ask about company policies, IT support or your first day.<br>I’ll use the documents your account can access.</p><div class="suggestions">
+              <button class="suggestion" data-question="How much annual leave do employees receive?"><span class="topic">PEOPLE &amp; CULTURE <span aria-hidden="true">↗</span></span><strong>Plan your time off</strong><span>How much annual leave do I get?</span></button>
+              <button class="suggestion" data-question="What must employees do before collecting their laptop for Project Orchid onboarding?"><span class="topic">GETTING STARTED <span aria-hidden="true">↗</span></span><strong>Make your first day easier</strong><span>What do I do before laptop collection?</span></button>
+              <button class="suggestion" data-question="What must employees do to keep their accounts secure?"><span class="topic">IT &amp; SECURITY <span aria-hidden="true">↗</span></span><strong>Keep your account safe</strong><span>What are our account security rules?</span></button>
+              <button class="suggestion" id="finance-suggestion" data-question="When does the finance team review supplier payments, and what approval is needed for payments above 5000 BHD?" hidden><span class="topic">ADMINISTRATION <span aria-hidden="true">↗</span></span><strong>Check payment approvals</strong><span>When are supplier payments reviewed?</span></button>
+            </div></div>
+          </div>
+          <form id="question-form" class="composer"><label class="sr-only" for="question">Ask a company question</label><div class="input-row"><textarea id="question" rows="2" maxlength="4000" placeholder="Ask a question about ExampleCo…" required></textarea><button id="send-button" type="submit" aria-label="Send question">↑</button></div><div class="composer-footer"><span id="composer-status" role="status">Connect your account to start a conversation.</span><span>Enter to send · Shift + Enter for a new line</span></div></form>
+        </section>
+        <aside class="context-panel" aria-label="Answer context"><section class="context-card"><div class="section-kicker">YOUR WORKSPACE</div><h2>Knowledge with boundaries.</h2><p>Company answers, grounded in the right documents.</p><div class="access-box"><span class="access-icon" aria-hidden="true">◇</span><div><strong id="access-title">Account not connected</strong><span id="access-description">Connect to verify your access.</span></div></div><div class="context-rule"><span>01</span><p>Your identity determines which documents are available.</p></div><div class="context-rule"><span>02</span><p>Sources accompany answers so you can check the evidence.</p></div><div class="context-rule"><span>03</span><p>If the documents don’t cover it, ask your team for help.</p></div></section><section class="sources-card"><div class="section-kicker">LATEST ANSWER</div><h2>Sources &amp; context <span aria-hidden="true">↙</span></h2><div id="sources"><p class="sources-empty">The documents used for your latest answer will appear here.</p></div><p id="answer-meta" class="answer-meta"></p></section><p class="demo-note">ExampleCo is fictional. All company documents and test markers are synthetic. Check important decisions with the relevant team.</p></aside>
+      </div>
+      <section class="payments-panel" aria-labelledby="payments-heading">
+        <div class="panel-heading"><div><span class="spark" aria-hidden="true">↗</span><strong id="payments-heading">Supplier payments</strong></div><span class="verified-label">Synthetic finance workspace</span></div>
+        <div class="payments-content">
+          <h2>A clear view of monthly payments.</h2>
+          <p>Review individual payments above 5,000 BHD. Amounts come from validated records, with exact calculations.</p>
+          <p id="payments-access">Connect an administrator account to view supplier payments.</p>
+          <form id="payments-form" class="payments-form" hidden>
+            <div><label for="payments-month">Payment month</label><input id="payments-month" type="month" value="2026-10" min="0001-01" max="9999-12" required></div>
+            <button id="payments-submit" class="primary-button" type="submit">View payments <span aria-hidden="true">↗</span></button>
+          </form>
+          <p id="payments-status" role="status" aria-live="polite"></p>
+          <div id="payments-result" hidden></div>
+        </div>
+      </section>
+      <footer class="page-footer"><span>EXAMPLECO <span aria-hidden="true">/</span> KNOWLEDGE THAT WORKS FOR YOU</span><span>Local processing · Role-based access</span></footer>
+    </main>
+  </div>
+  <dialog id="account-dialog" aria-labelledby="dialog-title"><form id="account-form"><div class="dialog-top"><span class="brand-mark">e.</span><button type="button" id="close-dialog" aria-label="Close account dialog">×</button></div><div class="eyebrow">YOUR COMPANY WORKSPACE</div><h2 id="dialog-title">Connect your account</h2><p>Use your local employee or administrator access token. Your role is verified by the server.</p><label for="access-token">Access token</label><input id="access-token" type="password" autocomplete="off" spellcheck="false" required placeholder="Paste your local access token"><p class="token-note">Kept only in this page’s memory. Reloading or disconnecting clears it.</p><p id="login-error" role="alert"></p><button id="connect-button" class="primary-button" type="submit">Connect to ExampleCo <span aria-hidden="true">↗</span></button></form></dialog>
+</body>
+</html>

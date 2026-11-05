@@ -1,0 +1,18 @@
+{
+  "started_at_utc": "2026-11-05T11:27:55.792289+00:00",
+  "source_tag": "optimized-gemma:latest",
+  "checks": {
+    "temporary_tag_created": true,
+    "identical_weight": true,
+    "identical_parameters": false,
+    "identical_template": true,
+    "identical_manifest": false,
+    "temporary_tag_removed": true
+  },
+  "original_manifest_sha256": "c40843ebaf9db6190dc77cfcb5049a7508a56cd9c14eae7eff12e35129872e92",
+  "rebuilt_manifest_sha256": "4ef957e92e09466b15f3f735cc5ff74df535a9caa2ee87cfa73d373db42daa5b",
+  "original_weight_sha256": "c113003e49b792dd9974d8dc21c16d569ce4cc7673a9a10a68ddaa998b03ed16",
+  "rebuilt_weight_sha256": "c113003e49b792dd9974d8dc21c16d569ce4cc7673a9a10a68ddaa998b03ed16",
+  "status": "fail",
+  "finished_at_utc": "2026-11-05T11:28:00.328601+00:00"
+}

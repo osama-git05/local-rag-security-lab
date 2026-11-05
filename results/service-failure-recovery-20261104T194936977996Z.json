@@ -1,0 +1,31 @@
+{
+  "run_type": "ollama_service_failure_recovery",
+  "started_at_utc": "2026-11-04T19:49:36.977996+00:00",
+  "method": "local process lifecycle and real authenticated API requests",
+  "checks": [
+    {
+      "check": "assistant_api_initially_available",
+      "passed": true
+    },
+    {
+      "check": "verified_employee_identity",
+      "passed": true
+    },
+    {
+      "check": "ollama_initially_available",
+      "passed": true
+    },
+    {
+      "check": "ollama_restored",
+      "passed": true
+    }
+  ],
+  "browser_visual_verification": "not performed",
+  "limitations": [
+    "API failure/recovery is exercised; the browser error message and send-button recovery are not directly observed.",
+    "Only the existing local app/server are stopped and restarted; no model download, data ingestion or credential recreation is performed."
+  ],
+  "operation_error_type": "ConnectTimeout",
+  "finished_at_utc": "2026-11-04T19:49:44.859514+00:00",
+  "status": "error"
+}

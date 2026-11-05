@@ -1,0 +1,17 @@
+{
+  "started_at_utc": "2026-11-05T10:48:07.638159+00:00",
+  "head": "bea69ede2b70f1bf6d9b54ed6f20f6d934c14155",
+  "checks": {
+    "committed_checkout_has_current_entrypoint": false,
+    "candidate_starts_without_private_runtime_state": true,
+    "fresh_venv": true,
+    "locked_dependencies_installed": true,
+    "pip_check": true,
+    "candidate_smoke_started": true,
+    "health": true,
+    "homepage": true,
+    "admin_november": true,
+    "employee_denied": true
+  },
+  "finished_at_utc": "2026-11-05T10:50:14.648013+00:00"
+}

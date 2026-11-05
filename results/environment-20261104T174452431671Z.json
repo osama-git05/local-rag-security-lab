@@ -1,0 +1,106 @@
+{
+  "captured_at_utc": "2026-11-04T17:44:52.431671+00:00",
+  "git_commit": "bea69ede2b70f1bf6d9b54ed6f20f6d934c14155",
+  "python_version": "3.11.9",
+  "operating_system": "Windows",
+  "os_version": "10.0.26200",
+  "machine": "AMD64",
+  "packages": {
+    "fastapi": "0.162.0",
+    "uvicorn": "0.54.0",
+    "chromadb": "1.5.9",
+    "httpx": "0.28.1",
+    "pydantic": "2.14.2",
+    "python-dotenv": "1.2.4"
+  },
+  "ollama_server_version": "0.20.5",
+  "models": {
+    "optimized-gemma:latest": {
+      "installed_name": "optimized-gemma:latest",
+      "digest": "c40843ebaf9db6190dc77cfcb5049a7508a56cd9c14eae7eff12e35129872e92",
+      "size_bytes": 3427878682,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "4.6B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    "embeddinggemma": {
+      "installed_name": "embeddinggemma:latest",
+      "digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+      "size_bytes": 621875917,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma3",
+        "families": [
+          "gemma3"
+        ],
+        "parameter_size": "307.58M",
+        "quantization_level": "BF16"
+      }
+    }
+  },
+  "mode": "retrieval_authorized_prompt_hardened",
+  "system_prompt_sha256": "a8f36736124156a8af7745e944dd589332aa90e6b0b54b4a27cc65b52115b254",
+  "dataset_version": "0.1.0",
+  "manifest_sha256": "f7db52053591186039d957283803f19bc7b962e4903901047ed8deda2c868b7c",
+  "corpus_file_sha256": {
+    "onboarding-injection.md": "a07b57d6814ec1a7a21fb1139c1ed892e6929d52eb9d1c9f3832bb4ead5c4897",
+    "leave-policy.md": "6b04f152ace2d0b07ebcf0a070c4267c4d1949ffe502c83d2dac6112a532475f",
+    "security-policy.md": "1136a689a47d9ccec2a9d71a5c689066322540e57aa51b94ecc9f15b1c153420",
+    "support-ticket.md": "40ee23d0bd567d28018f7347872bb37f545ea568457a764370c86cda401c3088",
+    "finance-admin.md": "5bd4d903479e8dc2a1de3c8152cd6a1615393daaa78b527e94bc84b7a6d573f6"
+  },
+  "python_source_sha256": {
+    "app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/auth.py": "30b02384e64815120fa23a6cdb5224eb468779319a6cfcee21a24d05d73ad24a",
+    "app/ingest.py": "883cfbe72a84f6b59a3ade5fbeb4642bdbf88ff16a9779d21174b95ae86aa45d",
+    "app/main.py": "48084017af239c1e99b6f6905c1556328ab51981bbdf3e4ae0c031b6094e54c0",
+    "app/output_validation.py": "18aed13a1a54e1d44f8827db0b6fafe18577bc6de2e6925f5e87ac2cea0aa672",
+    "app/paths.py": "5e4f9dc8002492cf0803b76adcf9c3bee439c6fd5f152fadad68956db9e86c3d",
+    "app/query_guard.py": "3efa578a7008305f44027ffcfcf33895c6ab8740ac5d596b390fbf2e5c7f2bcc",
+    "app/rag.py": "e0f6f2a00d00763185186ad0a478f15b27cd50d254ea6d65eb9c9e3bd724649c",
+    "app/retrieve.py": "29bbb0d1a2a59ea3857ef4fe01485245399676c61f99d86e63306bc38db9ca89",
+    "app/ui.py": "a01002d564e4bbaf744de9b7f1d00d0e1a1fecf1dbb8d0c4d93aca569e98470f",
+    "evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evaluation/run_extended_regression.py": "fc59d8dad7c5e6449086c3b2a007da552051b91f3bc927b855d02c9e2190068d",
+    "evaluation/run_regression.py": "fd3c8533eb1f73c273143cc1dc300a28f3e76a507d7d9873f394bd5161ae9091",
+    "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/prepare_lab_model.py": "1663384831d6e9e4cb88282fcc0d15ed0a94fd860c67c075880ebcf65d0c2004",
+    "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/capture_environment.py": "3480cc20da364008d54e3262fc339ceb7a6e944d63efb9ab2c525e522276eb6a",
+    "scripts/lab_console.py": "2f8d47934bb4d0aee05c8d8320d00004783d278863f729331cfdfc5ca162bb5b",
+    "scripts/lab_console_web.py": "dd1a37fabd7e02dbd831a36021363f1472c33d94662fb1e7cf532c9a78a5f808",
+    "scripts/lab_workflow.py": "10adda377320130d958524115a66d288f0aba3ea482e9462257300f589afeccc",
+    "scripts/setup_tokens.py": "8a747a8510d2461c7a2fa280d1e6f5b3616767bc42dbd5d06eaabeb5d9dbfe28",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/isolated/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/isolated/check_api_authorization.py": "8feb0c32312681e680c88e39132965095012994aca9b40b882ea5b2017fbadb9",
+    "tests/isolated/check_authorization.py": "3233ba33a899642a87191c148d1e98d99a085859e4fe7f790673b929ee1cca7f",
+    "tests/isolated/check_lab_console.py": "dd91ee533f0ade106bb09e9da3a3184e581092f0fa955892fcbe03ae8582863a",
+    "tests/isolated/check_output_validation.py": "5406dfe6a5892af23e989dcacb7ecc9238dbbd3c621a9aa006d3618e5d3fab46",
+    "tests/isolated/check_query_output.py": "bedc060ec24f76d16d5cb9d433306c69da5f005c4b3898c1ee2e42806d37022e",
+    "tests/isolated/check_refusal_normalization.py": "eeddeff21e09ab2e5562a0eda15558d32002b42b77cf05d048807114c8183253",
+    "tests/isolated/check_retrieval_authorization.py": "28c20418bc14936ba2bca116f1ef4e23512a0322b2bc8c93e11467b6d314b0bb",
+    "tests/isolated/check_retrieval_policy.py": "28c20418bc14936ba2bca116f1ef4e23512a0322b2bc8c93e11467b6d314b0bb",
+    "tests/isolated/check_ui.py": "2ac061dd4f688700c91ca7cddc0b1ed5e4782b33e300db4d59009f1e1470ed20",
+    "tests/live/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/live/check_auth.py": "84341cbed099e1683374cbd1cebd9c0509444674e2ade2845b2f6f288eaefb66",
+    "tests/live/check_chroma_authorization.py": "efcd4dd7c69f279b0a78a5ff69fc2b0354e4966c83903432e7511cd855987f11",
+    "tests/run_isolated.py": "4326f470e671525e21387151f442453bab203be58162e1c436ecc5b52e8d823e"
+  },
+  "application_asset_sha256": {
+    "app/static/assistant.css": "4b58f041f7a6e1d701d80786e85971dd4b676dcbfe599c8a52976d5edbc601e9",
+    "app/static/assistant.js": "9fdfb81192a49c10777c2af4f139ee30f5ad554cb4980583a38267b4d93595c2",
+    "app/static/index.html": "0c5545c1a9ca466219830b74087e10e3b20b31065e8d869d03fe7d612499d11c",
+    "scripts/console_static/console.css": "05771bcdfdd8398d6f19e950bdc82383344e6ccbcd89fb497e2a22a0fb44aa3f",
+    "scripts/console_static/console.js": "f569e517b1597061c86f9a26d71ce27106fefc9fb7c4e6e62a9a68dcc8067df1",
+    "scripts/console_static/index.html": "06c911052bf13561882b48fc5a2db6c8844b9639f4e7df7121651a233b6b9584"
+  }
+}

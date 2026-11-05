@@ -1,0 +1,42 @@
+{
+  "started_at_utc": "2026-11-05T10:44:14.617Z",
+  "checks": [
+    {
+      "phase": "UI-01 employee login",
+      "status": "pass",
+      "kind": "real-local-api"
+    },
+    {
+      "phase": "UI-14 safe error and control recovery",
+      "status": "pass",
+      "kind": "replayed-502-in-browser",
+      "response": {
+        "detail": "Could not complete the local RAG request."
+      }
+    },
+    {
+      "phase": "UI-02 and UI-15 Enter, loading and live answer",
+      "status": "pass",
+      "kind": "real-local-api",
+      "http_status": 200,
+      "source_ids": [
+        "policy-leave",
+        "policy-security"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/screenshots/71-chat-safe-error.png",
+      "sha256": "4c160d0f96bc47364ccf63afdd391fe3447014fda535575f2402161f15fdfbf3"
+    },
+    {
+      "path": "docs/screenshots/72-chat-loading.png",
+      "sha256": "c92499c4e2731eede80d5440fb011a8174d3a7410cf281e0faaac93240605a2c"
+    },
+    {
+      "path": "docs/screenshots/73-chat-live-recovery.png",
+      "sha256": "a55b425e4fb39b339cd9beaccddea201c36f373e951da9ce3f5369862667ad92"
+    }
+  ]
+}

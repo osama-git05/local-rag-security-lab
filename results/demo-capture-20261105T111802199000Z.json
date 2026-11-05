@@ -1,0 +1,74 @@
+{
+  "started_at_utc": "2026-11-05T11:18:02.199Z",
+  "fps": 5,
+  "scenes": [
+    {
+      "label": "Introduction",
+      "caption": "ExampleCo demonstrates role-based document retrieval and traceable supplier payments.",
+      "start_frame": 0,
+      "end_frame": 18
+    },
+    {
+      "label": "Employee leave question",
+      "caption": "Employee session: submit a policy question and inspect its permitted sources.",
+      "start_frame": 18,
+      "end_frame": 98
+    },
+    {
+      "label": "Employee finance request",
+      "caption": "The employee\u2019s finance question returns the standard no-answer response.",
+      "start_frame": 98,
+      "end_frame": 176
+    },
+    {
+      "label": "Employee payment boundary",
+      "caption": "Employee accounts have no payment controls. The API also denies direct requests.",
+      "start_frame": 176,
+      "end_frame": 194
+    },
+    {
+      "label": "October administrator payments",
+      "caption": "October: 3 qualifying payments, 18,750.125 BHD. The CSV and policy sources are traceable.",
+      "start_frame": 194,
+      "end_frame": 241
+    },
+    {
+      "label": "November administrator payments",
+      "caption": "November: one qualifying payment for 8,000.000 BHD.",
+      "start_frame": 241,
+      "end_frame": 268
+    },
+    {
+      "label": "Saved regression evidence",
+      "caption": "Saved report: 12 RAG cases and 4 payment cases passed, with zero failures or errors.",
+      "start_frame": 268,
+      "end_frame": 306
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/screenshots/74-demo-employee-leave.png",
+      "sha256": "7672badf928551b897157194ec046216b471b264c43f22b3eb21a92bf1deac81"
+    },
+    {
+      "path": "docs/screenshots/75-demo-employee-payment-boundary.png",
+      "sha256": "ca178bcbc048b37311b1af30b862e76f21d0b84fa0a7dae6a9e344ffac210a36"
+    },
+    {
+      "path": "docs/screenshots/76-demo-admin-payment-provenance.png",
+      "sha256": "ce259f6d5dafba4839d968d9da9cdfa2cd9e729033657f7c994daa97a88ff5f2"
+    }
+  ],
+  "status": "pass",
+  "total_frames": 306,
+  "video": {
+    "filename": "exampleco-portfolio-demo.mp4",
+    "sha256": "df9c08ed967f62e0890790e09d0a8daa2d16f11c663e13f5bffdea05276bf438",
+    "duration_seconds": 61.2,
+    "bytes": 846537,
+    "format": "MP4 H.264",
+    "captions": "burned-in",
+    "audio": "none",
+    "decode_check": "pass"
+  }
+}

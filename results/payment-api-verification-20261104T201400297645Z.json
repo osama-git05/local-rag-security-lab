@@ -1,0 +1,191 @@
+{
+  "run_type": "payment-api-development-verification",
+  "environment_snapshot": "environment-20261104T201327357554Z.json",
+  "environment_snapshot_sha256": "d3fce86abce68872fe01190ba4dc48d4f35dfaf00dced41958f56f1a7e5c5478",
+  "active_payment_dataset": {
+    "version": "bead851cc33a44cab8145c44158d9093",
+    "source_sha256": "312e0b125cc79e70a20081661145c0a7f19efab34ef838b6e76086131460416f",
+    "imported_at_utc": "2026-11-04T20:09:28.708422+00:00",
+    "row_count": 8
+  },
+  "limitations": [
+    "Known synthetic development cases; not a held-out benchmark.",
+    "Environment snapshot does not automatically track payment activation; metadata recorded explicitly here.",
+    "No browser or model explanation was tested."
+  ],
+  "counts": {
+    "pass": 8,
+    "fail": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "case_id": "admin-october",
+      "expected_http_status": 200,
+      "status": "pass",
+      "http_status": 200,
+      "failed_checks": [],
+      "response": {
+        "operation": "supplier_payments_above_threshold",
+        "month": "2026-10",
+        "currency": "BHD",
+        "threshold_bhd": "5000.000",
+        "row_count": 3,
+        "total_bhd": "18750.125",
+        "rows": [
+          {
+            "payment_id": "PAY-001",
+            "supplier_name": "Demo Cedar Supplies",
+            "payment_date": "2026-10-01",
+            "amount_bhd": "5500.000",
+            "source_line": 2
+          },
+          {
+            "payment_id": "PAY-003",
+            "supplier_name": "Demo Palm Systems",
+            "payment_date": "2026-10-15",
+            "amount_bhd": "7250.125",
+            "source_line": 4
+          },
+          {
+            "payment_id": "PAY-004",
+            "supplier_name": "Demo Cedar Supplies",
+            "payment_date": "2026-10-31",
+            "amount_bhd": "6000.000",
+            "source_line": 5
+          }
+        ],
+        "dataset": {
+          "version": "bead851cc33a44cab8145c44158d9093",
+          "source_sha256": "312e0b125cc79e70a20081661145c0a7f19efab34ef838b6e76086131460416f",
+          "imported_at_utc": "2026-11-04T20:09:28.708422+00:00"
+        }
+      },
+      "elapsed_ms": 28.854
+    },
+    {
+      "case_id": "employee-denied",
+      "expected_http_status": 403,
+      "status": "pass",
+      "http_status": 403,
+      "failed_checks": [],
+      "response": {
+        "detail": "Access denied."
+      },
+      "elapsed_ms": 2.456
+    },
+    {
+      "case_id": "missing-token",
+      "expected_http_status": 401,
+      "status": "pass",
+      "http_status": 401,
+      "failed_checks": [],
+      "response": {
+        "detail": "Missing or invalid authentication token."
+      },
+      "elapsed_ms": 1.987
+    },
+    {
+      "case_id": "invalid-token",
+      "expected_http_status": 401,
+      "status": "pass",
+      "http_status": 401,
+      "failed_checks": [],
+      "response": {
+        "detail": "Missing or invalid authentication token."
+      },
+      "elapsed_ms": 1.894
+    },
+    {
+      "case_id": "caller-role-field",
+      "expected_http_status": 422,
+      "status": "pass",
+      "http_status": 422,
+      "failed_checks": [],
+      "response": {
+        "detail": [
+          {
+            "type": "extra_forbidden",
+            "loc": [
+              "body",
+              "role"
+            ],
+            "msg": "Extra inputs are not permitted",
+            "input": "admin"
+          }
+        ]
+      },
+      "elapsed_ms": 2.084
+    },
+    {
+      "case_id": "admin-empty",
+      "expected_http_status": 200,
+      "status": "pass",
+      "http_status": 200,
+      "failed_checks": [],
+      "response": {
+        "operation": "supplier_payments_above_threshold",
+        "month": "2026-12",
+        "currency": "BHD",
+        "threshold_bhd": "5000.000",
+        "row_count": 0,
+        "total_bhd": "0.000",
+        "rows": [],
+        "dataset": {
+          "version": "bead851cc33a44cab8145c44158d9093",
+          "source_sha256": "312e0b125cc79e70a20081661145c0a7f19efab34ef838b6e76086131460416f",
+          "imported_at_utc": "2026-11-04T20:09:28.708422+00:00"
+        }
+      },
+      "elapsed_ms": 2.993
+    },
+    {
+      "case_id": "invalid-month",
+      "expected_http_status": 422,
+      "status": "pass",
+      "http_status": 422,
+      "failed_checks": [],
+      "response": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "month"
+            ],
+            "msg": "Value error, Month must be a valid calendar month.",
+            "input": "2026-13",
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      },
+      "elapsed_ms": 1.997
+    },
+    {
+      "case_id": "unapproved-operation",
+      "expected_http_status": 422,
+      "status": "pass",
+      "http_status": 422,
+      "failed_checks": [],
+      "response": {
+        "detail": [
+          {
+            "type": "literal_error",
+            "loc": [
+              "body",
+              "operation"
+            ],
+            "msg": "Input should be 'supplier_payments_above_threshold'",
+            "input": "arbitrary_sql",
+            "ctx": {
+              "expected": "'supplier_payments_above_threshold'"
+            }
+          }
+        ]
+      },
+      "elapsed_ms": 1.308
+    }
+  ]
+}

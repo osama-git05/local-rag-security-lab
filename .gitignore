@@ -231,3 +231,11 @@ __pycache__/
 
 # Local vector database
 .chroma/
+
+# Local versioned supplier-payment database and SQLite sidecars
+data/payments.sqlite3*
+
+# Operator workflow lock and private diagnostics
+results/.lab-console.lock
+results/lab-diagnostic-*.log
+results/lab-diagnostic-*.json

@@ -1,0 +1,52 @@
+{
+  "run_type": "lab_console_http_verification",
+  "recorded_at_utc": "2026-11-04T14:24:28.600081+00:00",
+  "workflow_id": "20261104T142248372652Z-d41920c1",
+  "checks": [
+    {
+      "check": "Console home served",
+      "passed": true
+    },
+    {
+      "check": "Missing operator credentials rejected",
+      "passed": true
+    },
+    {
+      "check": "Employee cannot read operator reports",
+      "passed": true
+    },
+    {
+      "check": "Cross-origin job rejected",
+      "passed": true
+    },
+    {
+      "check": "Arbitrary command action rejected",
+      "passed": true
+    },
+    {
+      "check": "Concurrent workflow rejected",
+      "passed": true
+    },
+    {
+      "check": "Authorized safe summary download",
+      "passed": true
+    },
+    {
+      "check": "Employee summary download rejected",
+      "passed": true
+    },
+    {
+      "check": "No account tokens in summary",
+      "passed": true
+    }
+  ],
+  "workflow_status": "fail",
+  "case_counts": {
+    "pass": 10,
+    "fail": 2,
+    "error": 0
+  },
+  "environment_snapshot": "environment-20261104T142300564638Z.json",
+  "evaluation_report": "development-regression-20261104T142302177784Z.json",
+  "browser_visual_verification": "unavailable"
+}

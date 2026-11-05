@@ -1,0 +1,185 @@
+{
+  "run_type": "payment-ui-development-verification",
+  "base_url": "http://127.0.0.1:8001",
+  "dataset": {
+    "version": "bead851cc33a44cab8145c44158d9093",
+    "source_sha256": "312e0b125cc79e70a20081661145c0a7f19efab34ef838b6e76086131460416f",
+    "imported_at_utc": "2026-11-04T20:09:28.708422+00:00"
+  },
+  "policy": {
+    "document_id": "admin-finance",
+    "source": "finance-admin.md",
+    "access_level": "admin",
+    "trust_level": "curated",
+    "dataset_version": "0.1.0",
+    "source_sha256": "5bd4d903479e8dc2a1de3c8152cd6a1615393daaa78b527e94bc84b7a6d573f6",
+    "manifest_sha256": "f7db52053591186039d957283803f19bc7b962e4903901047ed8deda2c868b7c",
+    "excerpt": "The finance team reviews supplier payments every Friday.\nPayments above 5000 BHD require approval from two administrators.",
+    "start_line": 5,
+    "end_line": 6
+  },
+  "counts": {
+    "pass": 14,
+    "fail": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "case_id": "signed-out-access-boundary",
+      "kind": "real-local-api",
+      "status": "pass",
+      "elapsed_ms": 22.862,
+      "failed_checks": []
+    },
+    {
+      "case_id": "administrator-october-result",
+      "kind": "real-local-api",
+      "status": "pass",
+      "elapsed_ms": 452.046,
+      "failed_checks": []
+    },
+    {
+      "case_id": "administrator-source-grounded-policy",
+      "kind": "real-local-api",
+      "status": "pass",
+      "elapsed_ms": 185.188,
+      "failed_checks": []
+    },
+    {
+      "case_id": "administrator-empty-month",
+      "kind": "real-local-api",
+      "status": "pass",
+      "elapsed_ms": 173.698,
+      "failed_checks": []
+    },
+    {
+      "case_id": "mobile-payment-view",
+      "kind": "real-local-api",
+      "status": "pass",
+      "elapsed_ms": 184.169,
+      "failed_checks": []
+    },
+    {
+      "case_id": "employee-switch-clears-finance-results",
+      "kind": "real-local-api",
+      "status": "pass",
+      "elapsed_ms": 461.611,
+      "failed_checks": []
+    },
+    {
+      "case_id": "unavailable-service-clears-old-results-and-recovers",
+      "kind": "simulated-browser-response",
+      "status": "pass",
+      "elapsed_ms": 201.659,
+      "failed_checks": []
+    },
+    {
+      "case_id": "supplier-markup-is-text",
+      "kind": "simulated-browser-response",
+      "status": "pass",
+      "elapsed_ms": 70.126,
+      "failed_checks": []
+    },
+    {
+      "case_id": "inconsistent-total-is-rejected",
+      "kind": "simulated-browser-response",
+      "status": "pass",
+      "elapsed_ms": 62.57,
+      "failed_checks": []
+    },
+    {
+      "case_id": "invalid-policy-reference-is-rejected",
+      "kind": "simulated-browser-response",
+      "status": "pass",
+      "elapsed_ms": 66.582,
+      "failed_checks": []
+    },
+    {
+      "case_id": "disconnect-during-request-discards-delayed-result",
+      "kind": "simulated-browser-delay",
+      "status": "pass",
+      "elapsed_ms": 164.24,
+      "failed_checks": []
+    },
+    {
+      "case_id": "reload-clears-account-and-finance-data",
+      "kind": "real-browser-state",
+      "status": "pass",
+      "elapsed_ms": 45.281,
+      "failed_checks": []
+    },
+    {
+      "case_id": "month-change-clears-results",
+      "kind": "real-browser-state",
+      "status": "pass",
+      "elapsed_ms": 197.572,
+      "failed_checks": []
+    },
+    {
+      "case_id": "new-conversation-clears-finance-results",
+      "kind": "real-browser-state",
+      "status": "pass",
+      "elapsed_ms": 110.983,
+      "failed_checks": []
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "docs/screenshots/64-admin-payment-results-20261104T203425201Z.png",
+      "case_id": "administrator-october-result",
+      "kind": "real-local-api",
+      "sha256": "cfc5773770054796fa54b2031963a422e118a5499a35a96bc10c71e260562e58"
+    },
+    {
+      "file": "docs/screenshots/68-payments-with-policy-provenance.png",
+      "case_id": "administrator-source-grounded-policy",
+      "kind": "real-local-api",
+      "sha256": "ce259f6d5dafba4839d968d9da9cdfa2cd9e729033657f7c994daa97a88ff5f2"
+    },
+    {
+      "file": "docs/screenshots/65-payments-empty-month-20261104T203425201Z.png",
+      "case_id": "administrator-empty-month",
+      "kind": "real-local-api",
+      "sha256": "d2c4201ee137a11d11388015a1e99f6c30ceecf3adcbed4545c2d7dda00ca37f"
+    },
+    {
+      "file": "docs/screenshots/67-payments-mobile-view-20261104T203425201Z.png",
+      "case_id": "mobile-payment-view",
+      "kind": "real-local-api",
+      "sha256": "4acc990e63e2f0d0dd7c328ccb90831704385fba49da2f8e4ae8d386c27fb70b"
+    },
+    {
+      "file": "docs/screenshots/66-employee-payment-boundary-20261104T203425201Z.png",
+      "case_id": "employee-switch-clears-finance-results",
+      "kind": "real-local-api",
+      "sha256": "bde4cd3feec78c8b932d66fa5a8f3406d2dae7d3e5fcdfcd4ca3dced7451a2f8"
+    },
+    {
+      "file": "docs/screenshots/69-employee-policy-boundary.png",
+      "case_id": "employee-switch-clears-finance-results",
+      "kind": "real-local-api",
+      "sha256": "bde4cd3feec78c8b932d66fa5a8f3406d2dae7d3e5fcdfcd4ca3dced7451a2f8"
+    }
+  ],
+  "source_artifact_sha256": {
+    "app/static/index.html": "386d9f22b8f766ac06d14e416d6f1479840a2e51de911ef7f430aa5a145b7eca",
+    "app/static/assistant.js": "f7c3d536c88d58a9b23faf9e7f9830a4af086e7eae71e880eb44846c8c78fe63",
+    "app/static/assistant.css": "b047065da97d35b9821b0140d1e9524f481a96fad2bb0127f17b5acad1423ca0",
+    "app/payment_policy.py": "14cfe2bb07850ee8fd8ca736a7eb5c07744b103cd8537964756ce18aa69b3295",
+    "data/corpus/finance-admin.md": "5bd4d903479e8dc2a1de3c8152cd6a1615393daaa78b527e94bc84b7a6d573f6",
+    "data/manifest.json": "f7db52053591186039d957283803f19bc7b962e4903901047ed8deda2c868b7c",
+    "tests/live/check_payment_ui.py": "2515985121b389b1feac5731a07afe7e46f0ffa37a5a485168b52ce135fd0917",
+    "tests/live/check_payment_ui.cjs": "411abe956da97ab143657f63bad006976eb99b538e585957f8b56e7c8b93eb47",
+    "tests/fixtures/supplier-payments.csv": "312e0b125cc79e70a20081661145c0a7f19efab34ef838b6e76086131460416f"
+  },
+  "limitations": [
+    "Known synthetic development fixture, not a held-out benchmark.",
+    "Screenshots are genuine component captures from separate headless Chrome against the local API.",
+    "Response simulations and delays are labelled per case; no simulated screenshot evidence is saved.",
+    "No model-generated explanation was tested; policy is an exact approved source excerpt."
+  ],
+  "environment_snapshot": "environment-20261104T203500740652Z.json",
+  "environment_snapshot_sha256": "e421a0b87643305777062efb20c3bc443d5425ba4754bc85628a85a7f9f778ef",
+  "environment_snapshot_captured_after_checks": true,
+  "snapshot_association": "Source and asset hashes verified unchanged after browser checks; active payment and policy provenance recorded explicitly."
+}

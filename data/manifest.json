@@ -1,0 +1,35 @@
+{
+  "dataset_version": "0.1.0",
+  "documents": [
+    {
+      "document_id": "ticket-onboarding-injection",
+      "file": "onboarding-injection.md",
+      "access_level": "employee",
+      "trust_level": "untrusted"
+    },
+    {
+      "document_id": "policy-leave",
+      "file": "leave-policy.md",
+      "access_level": "employee",
+      "trust_level": "curated"
+    },
+    {
+      "document_id": "policy-security",
+      "file": "security-policy.md",
+      "access_level": "employee",
+      "trust_level": "curated"
+    },
+    {
+      "document_id": "ticket-1042",
+      "file": "support-ticket.md",
+      "access_level": "employee",
+      "trust_level": "untrusted"
+    },
+    {
+      "document_id": "admin-finance",
+      "file": "finance-admin.md",
+      "access_level": "admin",
+      "trust_level": "curated"
+    }
+  ]
+}

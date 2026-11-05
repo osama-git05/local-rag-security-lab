@@ -1,0 +1,26 @@
+{
+  "run_type": "lab_workflow",
+  "run_id": "20261104T200934982610Z-27e95266",
+  "suite": "isolated",
+  "status": "pass",
+  "started_at_utc": "2026-11-04T20:09:34.982610+00:00",
+  "stages": [
+    {
+      "name": "Isolated checks",
+      "module": "tests.run_isolated",
+      "status": "pass",
+      "returncode": 0,
+      "diagnostic_log": "lab-diagnostic-20261104T200934982610Z-27e95266-1.log",
+      "message": "Passed: 9/9; Passed: 10/10; Passed: 4/4; Ran 8 tests; Ran 21 tests; Ran 9 tests; Ran 10 tests; Ran 8 tests; Ran 8 tests; Ran 8 tests; Ran 5 tests",
+      "elapsed_ms": 11583.01
+    }
+  ],
+  "limitations": [
+    "Stage outcomes are not independent test-case counts.",
+    "Snapshots hash saved files, not the running API process.",
+    "Direct evaluation commands do not share this orchestration lock."
+  ],
+  "exit_code": 0,
+  "finished_at_utc": "2026-11-04T20:09:46.579725+00:00",
+  "elapsed_ms": 11585.87
+}

@@ -1,0 +1,76 @@
+{
+  "run_type": "ollama_service_failure_recovery",
+  "started_at_utc": "2026-11-04T19:51:08.760811+00:00",
+  "method": "local process lifecycle and real authenticated API requests",
+  "checks": [
+    {
+      "check": "assistant_api_initially_available",
+      "passed": true
+    },
+    {
+      "check": "verified_employee_identity",
+      "passed": true
+    },
+    {
+      "check": "ollama_initially_available",
+      "passed": true
+    },
+    {
+      "check": "ollama_temporarily_unavailable",
+      "passed": true,
+      "probe_error_type": "ConnectTimeout"
+    },
+    {
+      "check": "assistant_api_stays_available",
+      "passed": true
+    },
+    {
+      "check": "safe_model_unavailable_response",
+      "passed": true,
+      "http_status": 502,
+      "elapsed_ms": 2247.31,
+      "response_body": {
+        "detail": "Could not complete the local RAG request."
+      }
+    },
+    {
+      "check": "no_tokens_or_partial_answer_in_error",
+      "passed": true
+    },
+    {
+      "check": "ollama_restored",
+      "passed": true
+    },
+    {
+      "check": "grounded_answer_after_recovery",
+      "passed": true,
+      "http_status": 200,
+      "elapsed_ms": 10183.36,
+      "answer": "Employees receive 25 days of annual leave per year [policy-leave].",
+      "sources": [
+        {
+          "document_id": "policy-leave",
+          "source": "leave-policy.md",
+          "access_level": "employee"
+        },
+        {
+          "document_id": "policy-security",
+          "source": "security-policy.md",
+          "access_level": "employee"
+        }
+      ]
+    },
+    {
+      "check": "recovered_sources_employee_only",
+      "passed": true
+    }
+  ],
+  "browser_visual_verification": "not performed",
+  "previous_attempt": "service-failure-recovery-20261104T194936977996Z.json",
+  "limitations": [
+    "API failure/recovery is exercised; actual browser error rendering and send-button recovery are not observed.",
+    "Existing credentials, corpus, database and installed models are preserved."
+  ],
+  "finished_at_utc": "2026-11-04T19:51:26.981441+00:00",
+  "status": "pass"
+}

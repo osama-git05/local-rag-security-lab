@@ -1,0 +1,9 @@
+payment_id,supplier_name,payment_date,amount_bhd
+PAY-001,Demo Cedar Supplies,2026-10-01,5500.000
+PAY-002,Demo Harbor Services,2026-10-10,5000.000
+PAY-003,Demo Palm Systems,2026-10-15,7250.125
+PAY-004,Demo Cedar Supplies,2026-10-31,6000.000
+PAY-005,Demo Coast Logistics,2026-09-30,9000.000
+PAY-006,Demo Dune Equipment,2026-11-01,8000.000
+PAY-007,Demo Cedar Supplies,2026-10-20,3000.000
+PAY-008,Demo Cedar Supplies,2026-10-21,2500.000
