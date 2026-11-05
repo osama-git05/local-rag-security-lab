@@ -4,6 +4,9 @@ All entries are unreleased development work. No semantic version or release tag 
 
 ## Unreleased - 2026-11-05
 
+- Verified both credential replacements and rejection of both previous tokens. Reconstructed the local generation tag with an identical manifest digest.
+- Verified the implementation commit from a fresh local clone, including dependency installation, new Chroma ingestion and all 16 live cases.
+
 - Recorded a 61-second captioned walkthrough of the live employee and administrator flows, with screenshots 74–76 and a capture record.
 
 - Added active payment dataset compatibility checks and four live payment cases. The extended workflow passed 126 isolated checks, three index checks and all 16 live cases.

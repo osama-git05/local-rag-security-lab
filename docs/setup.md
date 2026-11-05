@@ -2,11 +2,15 @@
 
 Commands target Windows PowerShell and the current package layout. Release verification distinguishes the committed Git tree from the current working source.
 
+## Verified fresh checkout on 5 November 2026
+
+A clean local clone of `b48bc3775dab85979c8af3972b0e10fdccd820de` began without credentials, a virtual environment or databases. The verification created a fresh Python environment, installed the lockfile, ran `pip check`, generated temporary account tokens, activated the payment fixture and built a new Chroma index from the five committed documents. The isolated suite, three actual-index checks and all 16 live cases passed against a separate loopback API. The clone used the existing local Ollama service and installed models. [Checkout report](../results/fresh-checkout-verification-20261105T113532797194Z.json) · [Live case report](../results/development-regression-20261105T113406523562Z.json) · [Snapshot](../results/environment-20261105T113404460262Z.json).
+
 ## Clean-source verification on 5 November 2026
 
-An archive of Git commit `bea69ed` contains the original health-endpoint implementation. The current `app/main.py`, payment feature and regression suite are working-tree files outside that commit. A fresh checkout of the commit therefore cannot reproduce the current application.
+Before the implementation commit, an archive of Git commit `bea69ed` contained the original health-endpoint implementation. The payment feature and regression suite existed only in the working tree at that point.
 
-A separate temporary copy of the current application, data fixtures and scripts started without credentials, an index or a payment database. Python 3.11.9 created a fresh virtual environment and installed `requirements.lock` from PyPI. `pip check` passed. With generated temporary credentials and a fresh activation of the synthetic fixture, FastAPI TestClient verified the homepage, health endpoint, the administrator’s November total of 8,000.000 BHD and employee HTTP 403. The smoke check exercised the payment path. Fresh checkout verification of the current source and rebuilding the generation model and vector index remain open. [Clean-source report](../results/clean-source-verification-20261105T104807638159Z.json).
+A separate temporary copy of the working source passed a fresh pinned installation and `pip check`. FastAPI TestClient verified the homepage, health endpoint, the administrator’s November total of 8,000.000 BHD and employee HTTP 403 using temporary credentials and the synthetic fixture. The later checkout verification above added fresh index ingestion and live cases. [Clean-source report](../results/clean-source-verification-20261105T104807638159Z.json).
 
 ## 1. Prepare the Python environment
 
@@ -42,7 +46,7 @@ ollama list
 
 Current generation model: `optimized-gemma:latest`. Current embedding model: `embeddinggemma`.
 
-The generation model is a local tag. Its exact weight identity, observed settings and the publisher’s licensing statements are recorded separately. A rebuild from scratch remains unverified. [Model provenance](model-provenance.md).
+The generation model is a local tag. The model record gives the exact weight identity, a verified local rebuild recipe from the installed publisher artifact, and the unresolved terms for redistributing the merged weights. [Model provenance](model-provenance.md).
 
 Changing the generation model does not require replacing the embeddings. Changing the embedding model requires compatible ingestion and retrieval settings and a deliberate index rebuild.
 

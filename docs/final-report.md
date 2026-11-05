@@ -96,7 +96,7 @@ The extended run finished in approximately **106 seconds**, with zero live failu
 - The fixtures are known development examples. Generalization requires a separate held-out attack set and a controlled comparison.
 - Citation validation checks document-ID membership. Assessing whether each claim is factually supported requires a separate evaluation.
 - The real Ollama outage and the browser error check were separate. The browser replayed the previously recorded safe 502 response, then retried against the live service.
-- The clean setup used a temporary copy of the current working source because the existing Git commit predates the app. A fresh checkout of the reviewed commit and an end-to-end model/index rebuild remain open.
+- A fresh checkout of `b48bc37` passed dependency installation, index creation and all 16 live cases. It reused the installed Ollama service and models. A separate reconstruction of the local generation tag from the installed publisher artifact matched the original manifest. [Checkout evidence](setup.md#verified-fresh-checkout-on-5-november-2026).
 - The installed generation weight matches a published Gemma 4 E2B fine-tune. The publisher’s statements for the merged artifact and its separate adapter differ. Redistribution terms for the merged weights remain unresolved. [Model provenance](model-provenance.md).
 
 The recorded portfolio demo shows the live employee session and administrator payment view, then summarizes the retained regression evidence. [Watch the demo](exampleco-portfolio-demo.mp4) · [Demo walkthrough](demo.md) · [Commit review](release-review.md).

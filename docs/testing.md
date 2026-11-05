@@ -1,5 +1,9 @@
 # Development test plan and observed results
 
+## Fresh checkout verification — 5 November 2026
+
+A clean checkout of `b48bc37` installed the dependency lock, generated temporary credentials, activated the synthetic payment fixture and ingested all five documents into a new Chroma index. The isolated suite, all three fresh-index authorization checks and all 16 live cases passed. The run used the installed Ollama service and models. [Checkout report](../results/fresh-checkout-verification-20261105T113532797194Z.json) · [Live outcomes](../results/development-regression-20261105T113406523562Z.json) · [Environment snapshot](../results/environment-20261105T113404460262Z.json).
+
 ## Clean-source setup smoke check — 5 November 2026
 
 A fresh Python 3.11.9 environment installed the pinned dependencies and passed `pip check`. In an isolated copy of the working source, the homepage, health endpoint, administrator November payment result and employee denial passed. The current Git commit lacks the new application entry point. [Setup details](setup.md#clean-source-verification-on-5-november-2026), [machine-readable report](../results/clean-source-verification-20261105T104807638159Z.json).

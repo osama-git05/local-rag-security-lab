@@ -146,4 +146,4 @@ Run the extended workflow or start the optional operator console:
 | `tests/` | Isolated, index, API and browser checks, plus the synthetic payment fixture |
 | `docs/` and `results/` | Project report, architecture, screenshots, test results and snapshots |
 
-The verification results describe known synthetic development cases. Release work still includes a fresh checkout of the reviewed commit, broader attack evaluation and resolution of the merged model's redistribution terms. [Findings](docs/findings.md) · [Evidence index](docs/evidence.md) · [Release checklist](docs/roadmap.md)
+The verification results describe known synthetic development cases. A fresh checkout passed dependency installation, new index ingestion, and all 16 live cases using the installed Ollama models. The source release keeps model artifacts external while the merged model’s redistribution terms remain unresolved. [Fresh checkout verification](docs/setup.md#verified-fresh-checkout-on-5-november-2026) · [Findings](docs/findings.md) · [Evidence index](docs/evidence.md) · [Release checklist](docs/roadmap.md)

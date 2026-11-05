@@ -1,0 +1,26 @@
+{
+  "started_at_utc": "2026-11-05T11:31:47.760939+00:00",
+  "tested_commit": "b48bc3775dab85979c8af3972b0e10fdccd820de",
+  "checks": {
+    "clean_checkout_exact_commit": true,
+    "locked_dependencies_and_pip_check": true,
+    "new_local_accounts_and_payment_activation": true,
+    "fresh_chroma_ingestion": true,
+    "isolated_suite_passed": true,
+    "fresh_index_authorization_count": 3,
+    "live_case_count": 16,
+    "tracked_files_clean_after_run": true
+  },
+  "artifacts": [
+    {
+      "file": "development-regression-20261105T113406523562Z.json",
+      "sha256": "c04b8b59551c19c435707fb95b490a8c9bf6bb83fd7c646ab1782ef8dde1b7ab"
+    },
+    {
+      "file": "environment-20261105T113404460262Z.json",
+      "sha256": "af10a56c74d1ba9a9c3a966ae7e5934a145f8e200fb9706852b51e692cd6007d"
+    }
+  ],
+  "status": "pass",
+  "finished_at_utc": "2026-11-05T11:35:32.797194+00:00"
+}

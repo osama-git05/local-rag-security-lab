@@ -6,7 +6,7 @@ The [Word master plan](ExampleCo_Project_Master_Plan.docx) remains the roadmap. 
 
 ## Current position
 
-The 5 November extended workflow passed 126 isolated checks, three index checks and 16 live cases, including four payment cases. The latest chat browser check verified login, loading, safe error display and live retry. Model provenance is documented, and a clean copy of the working source passed dependency installation and payment smoke checks. The proposed commit is ready for review. The captioned demo is recorded. A fresh checkout from the reviewed commit remains open. [Final report](final-report.md) · [Commit review](release-review.md) · [Demo](demo.md).
+The 5 November extended workflow passed 126 isolated checks, three index checks and 16 live cases, including four payment cases. The chat browser check verified login, loading, safe error display and live retry. The captioned demo is recorded. The implementation is committed as `b48bc37` and passed a fresh checkout with a pinned install, new index and 16 live cases. Both prior credentials were rejected after rotation. The local model reconstruction matched its manifest, and the source release keeps model artifacts external. [Final report](final-report.md) · [Release verification](release-review.md) · [Demo](demo.md).
 
 ## Earlier implementation checkpoints
 

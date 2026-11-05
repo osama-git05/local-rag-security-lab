@@ -65,7 +65,7 @@ Current policy permits an authenticated administrator to retrieve the fake finan
 - `trust_level` is recorded but no deterministic quarantine policy or content classifier is implemented.
 - Prompt instructions are guidance for generation, not authorization enforcement.
 - Citation IDs are validated, but factual support, complete citation coverage, prompt extraction and universal secret output are not established as enforced controls by the reviewed evidence.
-- Additional attack variants, broader metadata/read-path coverage, controlled evaluation, CI and clean-clone validation remain pending. The current authorization suite covers specific missing/invalid-label cases, not every malformed input.
+- Additional attack variants, broader metadata and read-path coverage, controlled evaluation and CI remain pending. The current authorization suite covers specific missing and invalid labels. [Fresh checkout verification](docs/setup.md#verified-fresh-checkout-on-5-november-2026).
 - The original port-8000 500 remains undiagnosed. The separate stale-mode issue on port 8001 was resolved by restarting the identified listener.
 - Temporary raw-answer diagnostic printing was requested to be removed before publication; verify its removal.
 

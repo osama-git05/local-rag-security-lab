@@ -16,8 +16,9 @@ Updated 5 November 2026. The [final report](final-report.md) summarizes complete
 
 ## Before a reproducible release
 
-- [ ] Review the proposed commit, including the selected screenshots, and commit the approved source and evidence.
-- [ ] Verify setup from a fresh checkout of that commit. Exercise the model and index preparation steps in an isolated environment.
+- [x] Commit the reviewed source, demo and selected evidence.
+- [x] Verify a fresh checkout with a pinned install, new index and 16 live cases using the installed Ollama models. [Checkout report](../results/fresh-checkout-verification-20261105T113532797194Z.json).
+- [x] Verify the local model reconstruction against the exact installed manifest digest. [Rebuild record](../results/model-local-rebuild-verified-20261105T112908555213Z.json).
 - [ ] Resolve terms for redistribution of the exact merged model or validate a separately licensed replacement.
 - [x] Rotate the active credential pair and verify both old values are rejected by the running API. [Rotation evidence](../results/credential-rotation-20261105T112710208082Z.json).
 - [x] Record the demo and retain reviewed captures for its visible milestones. [Demo video](exampleco-portfolio-demo.mp4) · [Demo walkthrough](demo.md).
